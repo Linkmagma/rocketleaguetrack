@@ -4,7 +4,7 @@ import CurrentRank from './components/CurrentRank';
 function App() {
   return (
     <div className="App">
-      <div>HELLLLLLLLOOO000OOO THIS IS React</div>
+      <div>HELLLLLLLLOOO000npm nOOO THIS IS React</div>
       <CurrentRank />
     </div>
   );
