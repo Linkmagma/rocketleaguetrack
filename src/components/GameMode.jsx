@@ -23,3 +23,5 @@ function gameMode () {
     
         );
 }
+
+export default gameMode;
