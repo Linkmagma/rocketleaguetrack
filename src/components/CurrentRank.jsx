@@ -31,6 +31,35 @@ function currentRank () {
 
         </div>
     );
+
+    function convertToMmr () {
+        var selectedRank = document.getElementById('rank').value;
+        var selectedRankNumber = document.getElementById('rank_number').value;
+        var selectedDivision = document.getElementById('division').value;
+        
+        let mmr = 0;
+        
+        if (selectedRank === 'Bronze') {
+            mmr = 100;
+        } else if (selectedRank === 'Silver') {
+            mmr = 200;
+        } else if (selectedRank === 'Gold') {
+            mmr = 300;
+        } else if (selectedRank === 'Platinum'){
+            mmr = 400;
+        } else if (selectedRank === 'Diamond'){
+            mmr = 500;
+        } else if (selectedRank === 'Champion'){
+            mmr = 600;
+        } else if (selectedRank === 'Grand Champion'){
+            mmr = 700;
+        } else if (selectedRank === 'Supersonic Legend'){
+            mmr = 800;
+        }
+    }
+        
 }
+
+
 
 export default currentRank;
