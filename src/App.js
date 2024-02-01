@@ -1,11 +1,14 @@
 import './App.css';
 import CurrentRank from './components/CurrentRank';
+import PreferredRank from './components/PreferredRank';
+import WinsNeeded from './components/WinsNeeded';
 
 function App() {
   return (
-    <div className="App">
-      <div>HELLLLLLLLOOO000npm nOOO THIS IS React</div>
+    <div>
+      <PreferredRank />
       <CurrentRank />
+      <WinsNeeded />
     </div>
   );
 }

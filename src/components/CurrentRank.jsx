@@ -1,6 +1,6 @@
 import React from "react";
 
-function CurrentRank () {
+function currentRank () {
     return (
         <div>
             <h1>What is Your Current Rank And Division?</h1>
@@ -34,4 +34,4 @@ function CurrentRank () {
     );
 }
 
-export default CurrentRank;
+export default currentRank;

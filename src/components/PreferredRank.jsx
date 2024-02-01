@@ -1,13 +1,13 @@
 import React from "react";
 
-function PreferredRank () {
+function preferredRank () {
 
     return (
         
     <div>
         <div>
 
-            <h1>What is Your Current Rank And Division?</h1>
+            <h1>What is Your Prefferred Rank And Division?</h1>
 
             <select name="rank" id="rank">
                 <option value="Bronze">Bronze</option>
@@ -40,4 +40,4 @@ function PreferredRank () {
     );
 }
 
-export default PreferredRank;
+export default preferredRank;
