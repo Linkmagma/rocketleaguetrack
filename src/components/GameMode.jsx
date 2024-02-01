@@ -8,15 +8,14 @@ function gameMode () {
     
                 <h1>What Game Mode are you playing</h1>
     
-                <select name="rank" id="rank">
-                    <option value="Bronze">Bronze</option>
-                    <option value="Silver">Silver</option>
-                    <option value="Gold">Gold</option>
-                    <option value="Platinum">Platinum</option>
-                    <option value="Diamond">Diamond</option>
-                    <option value="Champion">Champion</option>
-                    <option value="Grand Champion">Grand Champion</option>
-                    <option value="Supersonic Legend">Supersonic Legend</option>
+                <select name="gamemode" id="gamemode">
+                    <option value="1v1">1v1</option>
+                    <option value="2v2">2v2</option>
+                    <option value="3v3">3v3</option>
+                    <option value="Rumble">Rumble</option>
+                    <option value="Hoops">Hoops</option>
+                    <option value="Dropshot">Dropshot</option>
+                    <option value="Snowday">Snowday</option>
                 </select>
     
             </div>
