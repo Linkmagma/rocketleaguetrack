@@ -1,6 +1,7 @@
 import React from "react";
 
 function currentRank () {
+    
     return (
         <div>
             <h1>What is Your Current Rank And Division?</h1>
@@ -31,35 +32,47 @@ function currentRank () {
 
         </div>
     );
-
-    function convertToMmr () {
-        var selectedRank = document.getElementById('rank').value;
-        var selectedRankNumber = document.getElementById('rank_number').value;
-        var selectedDivision = document.getElementById('division').value;
-        
-        let mmr = 0;
-        
-        if (selectedRank === 'Bronze') {
-            mmr = 100;
-        } else if (selectedRank === 'Silver') {
-            mmr = 200;
-        } else if (selectedRank === 'Gold') {
-            mmr = 300;
-        } else if (selectedRank === 'Platinum'){
-            mmr = 400;
-        } else if (selectedRank === 'Diamond'){
-            mmr = 500;
-        } else if (selectedRank === 'Champion'){
-            mmr = 600;
-        } else if (selectedRank === 'Grand Champion'){
-            mmr = 700;
-        } else if (selectedRank === 'Supersonic Legend'){
-            mmr = 800;
-        }
-    }
-        
 }
 
-
+function currentMmr() {
+    var selectedRank = document.getElementById('rank');
+    var selectedRankNumber = document.getElementById('rank_number');
+    var selectedDivision = document.getElementById('division'); 
+    
+    let mmr = 0;
+    
+    if (selectedRank === 'Bronze') {
+        mmr = 100;
+    } else if (selectedRank === 'Silver') {
+        mmr = 200;
+    } else if (selectedRank === 'Gold') {
+        mmr = 300;
+    } else if (selectedRank === 'Platinum'){
+        mmr = 400;
+    } else if (selectedRank === 'Diamond'){
+        mmr = 500;
+    } else if (selectedRank === 'Champion'){
+        mmr = 600;
+    } else if (selectedRank === 'Grand Champion'){
+        mmr = 700;
+    } else if (selectedRank === 'Supersonic Legend'){
+        mmr = 800;
+    } else if (selectedRankNumber === '1'){
+        mmr = 900;
+    } else if (selectedRankNumber === '2'){
+        mmr = 1000; // Add conditions for other rank numbers as needed
+    } else if (selectedRankNumber === '3'){
+        mmr = 1100; // Add conditions for other rank numbers as needed
+    } else if (selectedDivision === '3'){
+        mmr = 1100; // Add conditions for other rank numbers as needed
+    } else if (selectedDivision === '3'){
+        mmr = 1100; // Add conditions for other rank numbers as needed
+    }
+    
+    return mmr;
+}
 
 export default currentRank;
+export {
+    currentMmr
+};

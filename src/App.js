@@ -1,15 +1,25 @@
 import './App.css';
-import CurrentRank from './components/CurrentRank';
 import PreferredRank from './components/PreferredRank';
+import CurrentRank from './components/CurrentRank';
+import { currentMmr } from './components/CurrentRank';
 import WinsNeeded from './components/WinsNeeded';
 import GameMode from './components/GameMode';
 
 function App() {
+
+  const mmr = currentMmr();
+
   return (
     <div>
       <GameMode />
-      <CurrentRank />
-      <PreferredRank />
+      <div>
+        <CurrentRank />
+        <p>MMR: {mmr}</p>
+      </div>
+      <div>
+        <PreferredRank />
+        <p>MMR: 100</p>
+      </div>
       <WinsNeeded />
     </div>
   );
